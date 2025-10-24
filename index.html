@@ -69,7 +69,7 @@
 
     <main>
       <!-- #region hiro -->
-      <section class="hero" id="home">
+      <section class="section hero" id="home">
         <div class="container">
           <div class="hero-info">
             <div class="hero-welcome">
@@ -131,7 +131,9 @@
                 </p>
               </li>
             </ul>
-            <a class="about__link" href="#catalog" target="_blank">View catalog</a>
+            <a class="about__link" href="#catalog" target="_blank">
+              View catalog
+            </a>
           </div>
 
           <div class="about__container__image">
@@ -226,96 +228,115 @@
       </section>
       <!-- #endregion catalog -->
       <!-- #region advertisement -->
-      <section class="advertisement">
-        <div>
-          <p>
-            Choose your story, making every moment unique. Time is your style,
-            and we reveal it.
+      <section class="advertisement section">
+        <div class="container">
+          <p class="advertisement__text">
+            Choose
+            <span class="advertisement__accent">your story</span>
+            , making every moment unique. Time is your style, and we reveal it.
           </p>
-          <a href="">Contact Us</a>
+          <a class="advertisement__link" href="#contact">Contact Us</a>
         </div>
       </section>
       <!-- #endregion advertisement -->
       <!-- #region sale -->
-      <section class="sale" id="sale">
-        <h2>Sale</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/sale-1.png"
-              alt="watch front view"
-              width="96"
-              height="100"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/sale-2.png"
-              alt="watch front view"
-              width="96"
-              height="100"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/sale-3.png"
-              alt="watch side view"
-              width="96"
-              height="100"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/sale-4.png"
-              alt="watch back view"
-              width="96"
-              height="100"
-            />
-          </li>
-        </ul>
-        <img
-          src="./images/sale-main-watch.png"
-          alt="MARQ Commander - Carbon Edition"
-          width="328"
-          height="398"
-        />
-        <h3>MARQ&#174; Commander (Gen 2) - Carbon Edition</h3>
-        <p>Product tag: 706587</p>
-        <ul>
-          <li>
-            <p>€1500</p>
-          </li>
-          <li>
-            <span>€3000</span>
-          </li>
-        </ul>
-        <p>
-          The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
-          for adventurers that takes materials and features to the next level.
-          The body of the watch is made of very durable Fused Carbon Fiber
-          material and has a precise AMOLED touch screen. The sensitive touch
-          screen is complemented by buttons that can be used in any conditions.
-        </p>
-        <ul>
-          <li>
-            <p>Fused carbon fiber</p>
-          </li>
-          <li>
-            <p>Grade-5 Titanuim</p>
-          </li>
-          <li>
-            <p>Athlete</p>
-          </li>
-          <li>
-            <p>Golfer</p>
-          </li>
-          <li>
-            <p>Commander</p>
-          </li>
-          <li>
-            <p>Adventurer</p>
-          </li>
-        </ul>
+      <section class="sale section" id="sale">
+        <div class="container">
+          <h2 class="sale__title">Sale</h2>
+          <div class="sale__product">
+            <div class="container__four-foto">
+              <ul class="sale__list__four-foto">
+                <li class="sale__item__four-foto">
+                  <img
+                    class="sale__image__four-foto"
+                    src="./images/sale-1.png"
+                    alt="watch front view"
+                    width="96"
+                    height="100"
+                  />
+                </li>
+                <li class="sale__item__four-foto">
+                  <img
+                    class="sale__image__four-foto"
+                    src="./images/sale-2.png"
+                    alt="watch front view"
+                    width="96"
+                    height="100"
+                  />
+                </li>
+                <li class="sale__item__four-foto">
+                  <img
+                    class="sale__image__four-foto"
+                    src="./images/sale-3.png"
+                    alt="watch side view"
+                    width="96"
+                    height="100"
+                  />
+                </li>
+                <li class="sale__item__four-foto">
+                  <img
+                    class="sale__image__four-foto"
+                    src="./images/sale-4.png"
+                    alt="watch back view"
+                    width="96"
+                    height="100"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="container__main-image">
+              <img
+                class="sale__image"
+                src="./images/sale-main-watch.png"
+                alt="MARQ Commander - Carbon Edition"
+                width="328"
+                height="398"
+              />
+            </div>
+          </div>
+          <div class="container__info">
+            <h3 class="info__header">
+              MARQ&#174; Commander (Gen 2) - Carbon Edition
+            </h3>
+            <p class="info__text">Product tag: 706587</p>
+            <ul class="info__list-price">
+              <li class="info__item-accent-price">
+                <p class="info__text-accent-price">€1500</p>
+              </li>
+              <li class="info__item-price">
+                <span class="info__text-price">€3000</span>
+              </li>
+            </ul>
+            <p class="info__description">
+              The Garmin MARQ Commander Gen 2 Carbon Edition is a modern
+              smartwatch for adventurers that takes materials and features to
+              the next level. The body of the watch is made of very durable
+              Fused Carbon Fiber material and has a precise AMOLED touch screen.
+              The sensitive touch screen is complemented by buttons that can be
+              used in any conditions.
+            </p>
+            <ul class="info__list-hashtag">
+              <li class="info__item-hashtag">
+                <p class="info__text-hashtag">Fused carbon fiber</p>
+              </li>
+              <li class="info__item-hashtag">
+                <p class="info__text-hashtag">Grade-5 Titanuim</p>
+              </li>
+              <li class="info__item-hashtag">
+                <p class="info__text-hashtag">Athlete</p>
+              </li>
+              <li class="info__item-hashtag">
+                <p class="info__text-hashtag">Golfer</p>
+              </li>
+              <li class="info__item-hashtag">
+                <p class="info__text-hashtag">Commander</p>
+              </li>
+              <li class="info__item-hashtag">
+                <p class="info__text-hashtag">Adventurer</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!-- #endregion sale -->
       <!-- #region reviews -->
