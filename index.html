@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <title>WatchCharm</title>
     <link
       rel="stylesheet"
@@ -406,6 +407,13 @@
                 Please use the form below to contact us. Enter your name, email,
                 phone, and message and we'll get back to you shortly.
               </p>
+              <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="+380">
+                <textarea type="text" placeholder="Name"></textarea>
+                <button type="submit" class="about__link">Send</button>
+              </form>
             </div>
             <div class="container__image">
               <img
@@ -421,46 +429,46 @@
       <!-- #endregion contact us -->
     </main>
 
-    <footer>
-      <section class="footer section" id="footer">
-        <div class="container">
-          <div class="container__hat">
-            <div class="container__logo__icon">
-              <a class="footer__logo" href="./index.html">watchcharm</a>
-              <ul class="footer__icon__list">
-                <li class="footer__icon__item">
-                  <a class="footer__icon__link" href="" target="_blank">
-                    <svg class="footer__icon_image" width="20" height="20">
-                      <use href="./images/icon.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__icon__item">
-                  <a class="footer__icon__link" href="" target="_blank">
-                    <svg class="footer__icon_image" width="20" height="20">
-                      <use href="./images/icon.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__icon__item">
-                  <a class="footer__icon__link" href="" target="_blank">
-                    <svg class="footer__icon_image" width="20" height="20">
-                      <use href="./images/icon.svg#icon-youtube"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <p class="footer__text">
-              Have the time of your life with our watches: where high-class
-              craftsmanship meets impeccable design
-            </p>
-            <address class="footer__tel">
-              <a class="footer__link__tel" href="tel:+380684439426">
-                +380 (68) 443-94-26
-              </a>
-            </address>
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="container__hat">
+          <div class="container__logo__icon">
+            <a class="footer__logo" href="./index.html">watchcharm</a>
+            <ul class="footer__icon__list">
+              <li class="footer__icon__item">
+                <a class="footer__icon__link" href="" target="_blank">
+                  <svg class="footer__icon_image" width="20" height="20">
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon__item">
+                <a class="footer__icon__link" href="" target="_blank">
+                  <svg class="footer__icon_image" width="20" height="20">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon__item">
+                <a class="footer__icon__link" href="" target="_blank">
+                  <svg class="footer__icon_image" width="20" height="20">
+                    <use href="./images/icon.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
+          <p class="footer__text">
+            Have the time of your life with our watches: where high-class
+            craftsmanship meets impeccable design
+          </p>
+          <address class="footer__tel">
+            <a class="footer__link__tel" href="tel:+380684439426">
+              +380 (68) 443-94-26
+            </a>
+          </address>
+        </div>
+        <div class="container__middle__bottom">
           <div class="container__middle">
             <nav class="footer__navigation">
               <ul class="footer__navigation__list">
@@ -471,16 +479,22 @@
                   <a class="footer__navigation__link" href="#about">About Us</a>
                 </li>
                 <li class="footer__navigation__item">
-                  <a class="footer__navigation__link" href="#catalog">Catalog</a>
+                  <a class="footer__navigation__link" href="#catalog">
+                    Catalog
+                  </a>
                 </li>
                 <li class="footer__navigation__item">
                   <a class="footer__navigation__link" href="#sale">Sale</a>
                 </li>
                 <li class="footer__navigation__item">
-                  <a class="footer__navigation__link" href="#reviews">Reviews</a>
+                  <a class="footer__navigation__link" href="#reviews">
+                    Reviews
+                  </a>
                 </li>
                 <li class="footer__navigation__item">
-                  <a class="footer__navigation__link" href="#contact">Contact Us</a>
+                  <a class="footer__navigation__link" href="#contact">
+                    Contact Us
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -491,14 +505,20 @@
             </address>
           </div>
           <div class="container__bottom">
-            <p class="footer__copyright">&copy;2023 The Watch Spot. All rights reserved.</p>
+            <p class="footer__copyright">
+              &copy;2023 The Watch Spot. All rights reserved.
+            </p>
             <ul class="footer__legal__list">
-              <li class="footer__legal__item"><p class="footer__legal__text">Terms of Service</p></li>
-              <li class="footer__legal__item"><p class="footer__legal__text">Privacy Policy</p></li>
+              <li class="footer__legal__item">
+                <a href="#" class="footer__legal__text">Terms of Service</a>
+              </li>
+              <li class="footer__legal__item">
+                <a href="#" class="footer__legal__text">Privacy Policy</a>
+              </li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
