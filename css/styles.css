@@ -92,6 +92,8 @@ p {
   margin: 0 auto;
 }
 
+/* -------------navigation----------- */
+
 .header__navigation {
   display: flex;
   align-items: center;
@@ -102,20 +104,47 @@ p {
   gap: 40px;
 }
 
+/* .header__navigation__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+} */
+
+.header__navigation__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  /* text-align: center; */
+  color: #0c0c0c;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #3350e9;
+  border-radius: 50%;
+}
+
+/* -------------logo---------- */
+
 .logo {
   margin-right: 203px;
   display: inline-block;
 }
 
+/* -------------icon----------- */
+
 .header__icon__list {
   display: flex;
   gap: 10px;
-}
-
-.header__navigation__item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28571;
 }
 
 .header__icon__item {
@@ -129,6 +158,8 @@ p {
   padding: 8px;
   border: 1px solid rgba(12, 12, 12, 0.1);
   border-radius: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__icon__link:hover,
@@ -184,7 +215,7 @@ p {
   line-height: 1;
   letter-spacing: -0.02em;
   text-decoration: underline;
-  /* text-decoration-skip-ink: none; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-team__link:hover,
@@ -234,6 +265,7 @@ p {
   border-radius: 16px;
   padding: 15px 37px;
   max-width: 160px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about__link:hover,
@@ -336,13 +368,15 @@ p {
   padding: 15px 43px;
   min-width: 160px;
   height: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advertisement__link:hover,
 .advertisement__link:focus,
 .footer__link__tel:hover,
 .footer__link__tel:focus {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #0c0c0c;
 }
 
@@ -636,6 +670,7 @@ p {
   padding: 8px;
   border: 1px solid rgba(251, 251, 251, 0.1);
   border-radius: 10px;
+  
 }
 
 .footer__icon__link:hover .footer__icon_image,
@@ -646,7 +681,8 @@ p {
 .footer__icon_image {
   opacity: 0.8;
   fill: #fbfbfb;
-  transition-duration: 300ms;
+  /* transition-duration: 300ms; */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__text {
